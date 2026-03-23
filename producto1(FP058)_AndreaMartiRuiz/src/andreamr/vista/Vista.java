@@ -108,6 +108,17 @@ public class Vista {
     }
 
     // CLIENTES: ACCIONES
+    private double leerDouble(String mensaje) {
+        while (true) {
+            System.out.print(mensaje);
+            String input = sc.nextLine().trim();
+            try {
+                return Double.parseDouble(input);
+            } catch (NumberFormatException e) {
+                System.out.println("❌ Debes introducir un número decimal válido.");
+            }
+        }
+    }
 
     private void altaCliente() {
         System.out.println("\n[Alta Cliente]");
@@ -116,13 +127,15 @@ public class Vista {
         String nombre = leerTexto("Nombre: ");
         String domicilio = leerTexto("Domicilio: ");
         String nif = leerTexto("NIF: ");
-        String email = leerTexto("Email (ID): ");
+        String email = leerTexto("Email: ");
 
         Cliente cliente;
+
         if (tipo.equals("P")) {
-            cliente = new ClientePremium(nombre, domicilio, nif, email);
+            double cuotaAnual = leerDouble("Cuota anual: ");
+            double descuentoEnvio = leerDouble("Descuento envío: ");
+            cliente = new ClientePremium(nombre, domicilio, nif, email, cuotaAnual, descuentoEnvio);
         } else {
-            // Por defecto estándar
             cliente = new ClienteEstandar(nombre, domicilio, nif, email);
         }
 
@@ -181,30 +194,31 @@ public class Vista {
     // PEDIDOS: ACCIONES
     // =========================================================
 
-    private void altaPedido() {
-        System.out.println("\n[Alta Pedido]");
+private void altaPedido() {
+    System.out.println("\n[Alta Pedido]");
 
-        int numero = leerEntero("Número de pedido (ID): ");
+    try {
         String emailCliente = leerTexto("Email del cliente: ");
         String codigoArticulo = leerTexto("Código del artículo: ");
         int unidades = leerEntero("Unidades: ");
+        LocalDateTime fechaHora = LocalDateTime.now();
 
-        try {
-            // Recuperar cliente y artículo usando el controlador (validación)
-            Cliente cliente = controlador.buscarClientePorEmail(emailCliente);
-            Articulo articulo = controlador.buscarArticuloPorCodigo(codigoArticulo);
+        Cliente cliente = controlador.buscarClientePorEmail(emailCliente);
+        Articulo articulo = controlador.buscarArticuloPorCodigo(codigoArticulo);
 
-            // Fecha/hora actual para simplificar
-            Pedido pedido = new Pedido(numero, cliente, articulo, unidades, LocalDateTime.now());
+        Pedido pedido = new Pedido(cliente, articulo, unidades, fechaHora);
 
-            controlador.altaPedido(pedido);
-            System.out.println("✅ Pedido dado de alta correctamente.");
-            System.out.println("Total del pedido: " + pedido.calcularPrecioTotal());
+        controlador.altaPedido(pedido);
 
-        } catch (ClienteNoEncontradoException | ArticuloNoEncontradoException | PedidoYaExisteException e) {
-            System.out.println("❌ Error: " + e.getMessage());
-        }
+        System.out.println("✅ Pedido dado de alta correctamente.");
+        System.out.println("Número generado del pedido: " + pedido.getNumero());
+
+    } catch (ClienteNoEncontradoException | ArticuloNoEncontradoException e) {
+        System.out.println("❌ Error: " + e.getMessage());
+    } catch (PedidoYaExisteException e) {
+        System.out.println("❌ Error al dar de alta el pedido: " + e.getMessage());
     }
+}
 
     private void listarPedidos() {
         System.out.println("\n[Listar Pedidos]");

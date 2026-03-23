@@ -6,9 +6,37 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestPedidoDAO",
+            "request": "launch",
+            "mainClass": "andreamr.util.TestPedidoDAO",
+            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
+        },
+        {
+            "type": "java",
+            "name": "TestClienteDAO",
+            "request": "launch",
+            "mainClass": "andreamr.util.TestClienteDAO",
+            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
+        },
+        {
+            "type": "java",
+            "name": "TestArticuloDAO",
+            "request": "launch",
+            "mainClass": "andreamr.util.TestArticuloDAO",
+            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
+        },
+        {
+            "type": "java",
+            "name": "TestConexion",
+            "request": "launch",
+            "mainClass": "andreamr.util.TestConexion",
+            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "andreamr.vista.Principal"
         }
     ]
 }

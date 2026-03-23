@@ -3,6 +3,7 @@ package andreamr.modelo;
 public abstract class Cliente {
 
     // ATRIBUTOS
+    private int idCliente;
     private String nombre;
     private String domicilio;
     private String nif;
@@ -10,7 +11,14 @@ public abstract class Cliente {
 
     // CONSTRUCTOR
   
-    public Cliente(String nombre, String domicilio, String nif, String email) {
+    public Cliente(int idCliente, String nombre, String domicilio, String nif, String email) {
+        this.idCliente = idCliente;
+        this.nombre = nombre;
+        this.domicilio = domicilio;
+        this.nif = nif;
+        this.email = email;
+    }
+        public Cliente(String nombre, String domicilio, String nif, String email) {
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.nif = nif;
@@ -18,6 +26,12 @@ public abstract class Cliente {
     }
 
     //  GETTERS Y SETTERS
+     public int getIdCliente() {
+        return idCliente;
+    }
+     public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -58,7 +72,8 @@ public abstract class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "nombre='" + nombre + '\'' +
+                "idCliente='" + idCliente + '\'' +
+                ", nombre='" + nombre + '\'' +
                 ", domicilio='" + domicilio + '\'' +
                 ", nif='" + nif + '\'' +
                 ", email='" + email + '\'' +

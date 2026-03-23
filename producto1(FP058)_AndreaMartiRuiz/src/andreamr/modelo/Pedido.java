@@ -20,6 +20,12 @@ public class Pedido {
         this.unidades = unidades;
         this.fechaHora = fechaHora;
     }
+    public Pedido(Cliente cliente, Articulo articulo, int unidades, LocalDateTime fechaHora) {
+    this.cliente = cliente;
+    this.articulo = articulo;
+    this.unidades = unidades;
+    this.fechaHora = fechaHora;
+}
 
     // GETTERS Y SETTERS 
     public int getNumero() {

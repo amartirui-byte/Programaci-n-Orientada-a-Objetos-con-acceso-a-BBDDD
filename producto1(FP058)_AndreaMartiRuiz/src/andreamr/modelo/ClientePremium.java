@@ -6,10 +6,10 @@ public class ClientePremium extends Cliente {
     private double cuotaAnual;
     private double descuentoEnvio;
 
-    // CONSTRUCTOR
+    // CONSTRUCTORES
 
-    public ClientePremium(String nombre, String domicilio, String nif, String email) {
-        super(nombre, domicilio, nif, email);
+    public ClientePremium(int idCliente, String nombre, String domicilio, String nif, String email, double cuotaAnual, double descuentoEnvio) {
+        super(idCliente, nombre, domicilio, nif, email);
         this.cuotaAnual = 30.0;
         this.descuentoEnvio = 0.20;
     }
@@ -46,7 +46,8 @@ public class ClientePremium extends Cliente {
     // toString
     public String toString() {
         return "ClientePremium{" +
-                "nombre='" + getNombre() + '\'' +
+                "idCliente='" + getIdCliente() + '\'' +
+                ", nombre='" + getNombre() + '\'' +
                 ", domicilio='" + getDomicilio() + '\'' +
                 ", nif='" + getNif() + '\'' +
                 ", email='" + getEmail() + '\'' +
