@@ -354,6 +354,6 @@ public class Datos {
 
     @Override
     public String toString() {
-        return "Datos{persistencia=MySQL mediante DAO}";
+    return "Datos{persistencia=JPA/Hibernate mediante DAO}";
     }
 }

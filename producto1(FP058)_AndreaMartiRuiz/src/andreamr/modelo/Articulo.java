@@ -1,16 +1,37 @@
 package andreamr.modelo;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "articulo")
 public class Articulo {
 
-    // ATRIBUTOS 
-    private String codigo; // Identificador alfanumérico
+    // ATRIBUTOS
+    @Id
+    @Column(name = "codigo", length = 20)
+    private String codigo; // Identificador del artículo
+
+    @Column(name = "descripcion", nullable = false, length = 100)
     private String descripcion;
+
+    @Column(name = "precio_venta", nullable = false)
     private double precioVenta;
+
+    @Column(name = "gastos_envio", nullable = false)
     private double gastosEnvio;
+
+    @Column(name = "tiempo_preparacion_min", nullable = false)
     private int tiempoPreparacionMin;
 
-    // CONSTRUCTOR
-   
+    // CONSTRUCTOR VACÍO
+    // JPA lo necesita para poder crear objetos desde la base de datos.
+    public Articulo() {
+    }
+
+    // CONSTRUCTOR CON PARÁMETROS
     public Articulo(String codigo, String descripcion, double precioVenta, double gastosEnvio, int tiempoPreparacionMin) {
         this.codigo = codigo;
         this.descripcion = descripcion;
@@ -19,7 +40,7 @@ public class Articulo {
         this.tiempoPreparacionMin = tiempoPreparacionMin;
     }
 
-    // GETTERS Y SETTERS 
+    // GETTERS Y SETTERS
     public String getCodigo() {
         return codigo;
     }

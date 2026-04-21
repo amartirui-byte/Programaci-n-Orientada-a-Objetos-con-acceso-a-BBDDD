@@ -1,42 +1,12 @@
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "type": "java",
-            "name": "TestPedidoDAO",
+            "name": "Principal",
             "request": "launch",
-            "mainClass": "andreamr.util.TestPedidoDAO",
-            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
-        },
-        {
-            "type": "java",
-            "name": "TestClienteDAO",
-            "request": "launch",
-            "mainClass": "andreamr.util.TestClienteDAO",
-            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
-        },
-        {
-            "type": "java",
-            "name": "TestArticuloDAO",
-            "request": "launch",
-            "mainClass": "andreamr.util.TestArticuloDAO",
-            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
-        },
-        {
-            "type": "java",
-            "name": "TestConexion",
-            "request": "launch",
-            "mainClass": "andreamr.util.TestConexion",
-            "projectName": "producto1(FP058)_AndreaMartiRuiz_bf036799"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "andreamr.vista.Principal"
+            "mainClass": "andreamr.vista.Principal",
+            "projectName": "producto4-jpa"
         }
     ]
 }

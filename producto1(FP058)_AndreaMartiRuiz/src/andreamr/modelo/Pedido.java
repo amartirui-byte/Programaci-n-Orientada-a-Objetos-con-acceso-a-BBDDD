@@ -2,17 +2,45 @@ package andreamr.modelo;
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "pedido")
 public class Pedido {
 
     // ATRIBUTOS
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "numero")
     private int numero;
+
+    @ManyToOne
+    @JoinColumn(name = "id_cliente", nullable = false)
     private Cliente cliente;
+
+    @ManyToOne
+    @JoinColumn(name = "codigo_articulo", nullable = false)
     private Articulo articulo;
+
+    @Column(name = "unidades", nullable = false)
     private int unidades;
+
+    @Column(name = "fecha_hora", nullable = false)
     private LocalDateTime fechaHora;
 
-    // CONSTRUCTORES
+    // CONSTRUCTOR VACÍO
+    // JPA lo necesita para poder crear objetos desde la base de datos.
+    public Pedido() {
+    }
 
+    // CONSTRUCTOR CON ID
     public Pedido(int numero, Cliente cliente, Articulo articulo, int unidades, LocalDateTime fechaHora) {
         this.numero = numero;
         this.cliente = cliente;
@@ -20,14 +48,16 @@ public class Pedido {
         this.unidades = unidades;
         this.fechaHora = fechaHora;
     }
-    public Pedido(Cliente cliente, Articulo articulo, int unidades, LocalDateTime fechaHora) {
-    this.cliente = cliente;
-    this.articulo = articulo;
-    this.unidades = unidades;
-    this.fechaHora = fechaHora;
-}
 
-    // GETTERS Y SETTERS 
+    // CONSTRUCTOR SIN ID
+    public Pedido(Cliente cliente, Articulo articulo, int unidades, LocalDateTime fechaHora) {
+        this.cliente = cliente;
+        this.articulo = articulo;
+        this.unidades = unidades;
+        this.fechaHora = fechaHora;
+    }
+
+    // GETTERS Y SETTERS
     public int getNumero() {
         return numero;
     }
@@ -68,10 +98,9 @@ public class Pedido {
         this.fechaHora = fechaHora;
     }
 
-    // MÉTODOS DE NEGOCIO 
+    // MÉTODOS DE NEGOCIO
 
     // Calcula los gastos de envío aplicando el descuento del tipo de cliente.
-  
     public double calcularGastosEnvio() {
         if (articulo == null || cliente == null) {
             return 0.0;
@@ -80,8 +109,7 @@ public class Pedido {
         return articulo.getGastosEnvio() * (1.0 - cliente.descuentoGastosEnvio());
     }
 
-    // Calcula el precio total del pedido: (precio de venta * unidades) + gastos de envío con descuento si aplica.
-
+    // Calcula el precio total del pedido.
     public double calcularPrecioTotal() {
         if (articulo == null || cliente == null) {
             return 0.0;

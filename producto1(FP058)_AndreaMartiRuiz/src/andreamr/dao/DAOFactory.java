@@ -1,12 +1,12 @@
 package andreamr.dao;
 
-import andreamr.dao.mysql.MySQLArticuloDAO;
-import andreamr.dao.mysql.MySQLClienteDAO;
-import andreamr.dao.mysql.MySQLPedidoDAO;
+import andreamr.dao.jpa.JPAArticuloDAO;
+import andreamr.dao.jpa.JPAClienteDAO;
+import andreamr.dao.jpa.JPAPedidoDAO;
 
 /**
  * Factory para crear los DAO de la aplicación.
- * En este proyecto devuelve implementaciones MySQL.
+ * En este producto devuelve implementaciones JPA.
  */
 public class DAOFactory {
 
@@ -14,20 +14,20 @@ public class DAOFactory {
      * Devuelve un DAO para artículos.
      */
     public static ArticuloDAO getArticuloDAO() {
-        return new MySQLArticuloDAO();
+        return new JPAArticuloDAO();
     }
 
     /**
      * Devuelve un DAO para clientes.
      */
     public static ClienteDAO getClienteDAO() {
-        return new MySQLClienteDAO();
+        return new JPAClienteDAO();
     }
 
     /**
      * Devuelve un DAO para pedidos.
      */
     public static PedidoDAO getPedidoDAO() {
-        return new MySQLPedidoDAO();
+        return new JPAPedidoDAO();
     }
 }

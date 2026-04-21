@@ -1,17 +1,28 @@
 package andreamr.modelo;
 
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("ESTANDAR")
 public class ClienteEstandar extends Cliente {
 
-    // CONSTRUCTORES 
+    // CONSTRUCTOR VACÍO
+    // JPA lo necesita para poder crear objetos desde la base de datos.
+    public ClienteEstandar() {
+    }
 
+    // CONSTRUCTOR CON ID
     public ClienteEstandar(int idCliente, String nombre, String domicilio, String nif, String email) {
         super(idCliente, nombre, domicilio, nif, email);
     }
-     public ClienteEstandar(String nombre, String domicilio, String nif, String email) {
+
+    // CONSTRUCTOR SIN ID
+    public ClienteEstandar(String nombre, String domicilio, String nif, String email) {
         super(nombre, domicilio, nif, email);
     }
 
-    // MÉTODOS DE NEGOCIO 
+    // MÉTODO DE NEGOCIO
     @Override
     public double descuentoGastosEnvio() {
         return 0.0;
@@ -21,7 +32,7 @@ public class ClienteEstandar extends Cliente {
     @Override
     public String toString() {
         return "ClienteEstandar{" +
-                "idCliente='" + getIdCliente() + '\'' +
+                "idCliente=" + getIdCliente() +
                 ", nombre='" + getNombre() + '\'' +
                 ", domicilio='" + getDomicilio() + '\'' +
                 ", nif='" + getNif() + '\'' +
