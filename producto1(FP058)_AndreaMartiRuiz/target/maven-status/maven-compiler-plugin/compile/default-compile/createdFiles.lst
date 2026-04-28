@@ -8,6 +8,7 @@ andreamr\modelo\Pedido.class
 andreamr\vista\Vista.class
 andreamr\modelo\ClienteNoEncontradoException.class
 andreamr\dao\ClienteDAO.class
+andreamr\vista\AppJavaFX.class
 andreamr\util\TestPedidoDAO.class
 andreamr\dao\mysql\MySQLClienteDAO.class
 andreamr\dao\jpa\JPAPedidoDAO.class

@@ -1,31 +1,32 @@
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\controlador\Controlador.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\ArticuloDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\ClienteDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\DAOFactory.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\jpa\JPAArticuloDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\jpa\JPAClienteDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\jpa\JPAPedidoDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\mysql\MySQLArticuloDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\mysql\MySQLClienteDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\mysql\MySQLPedidoDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\dao\PedidoDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\Articulo.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\ArticuloNoEncontradoException.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\Cliente.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\ClienteEstandar.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\ClienteNoEncontradoException.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\ClientePremium.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\ClienteYaExisteException.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\Datos.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\Pedido.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\PedidoNoEncontradoException.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\modelo\PedidoYaExisteException.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\ConnectionDB.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\JPAUtil.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\PruebaConexionJPA.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\TestArticuloDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\TestClienteDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\TestConexion.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\util\TestPedidoDAO.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\vista\Principal.java
-D:\Descargas2\Programación orientada a objetos con acceso a BBDD\producto1(FP058)_AndreaMartiRuiz\src\andreamr\vista\Vista.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\controlador\Controlador.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\ArticuloDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\ClienteDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\DAOFactory.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\jpa\JPAArticuloDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\jpa\JPAClienteDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\jpa\JPAPedidoDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\mysql\MySQLArticuloDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\mysql\MySQLClienteDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\mysql\MySQLPedidoDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\dao\PedidoDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\Articulo.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\ArticuloNoEncontradoException.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\Cliente.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\ClienteEstandar.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\ClienteNoEncontradoException.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\ClientePremium.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\ClienteYaExisteException.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\Datos.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\Pedido.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\PedidoNoEncontradoException.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\modelo\PedidoYaExisteException.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\ConnectionDB.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\JPAUtil.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\PruebaConexionJPA.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\TestArticuloDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\TestClienteDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\TestConexion.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\util\TestPedidoDAO.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\vista\AppJavaFX.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\vista\Principal.java
+D:\Descargas2\Programación orientada a objetos con acceso a BBDD\Proyecto POO con BBDD\src\andreamr\vista\Vista.java
